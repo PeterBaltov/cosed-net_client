@@ -109,12 +109,12 @@ class Home extends React.Component {
       let headers = new Headers();
       headers.append('Content-Type', 'application/json' );
       headers.append('Accept', 'application/json');
-      headers.append('Origin','https://89.215.222.118:443/upload');
+      headers.append('Origin','https://cosednetwork.com/upload');
       this.setState({loading: true})
       console.log('Making post request');
       // Change this location once the server-side implementation has
       // been deployed to a remote or cloud service provider
-      fetch('https://89.215.222.118:443/upload', {
+      fetch('https://cosednetwork.com/upload', {
           method: 'POST',
           headers: headers,
           body: JSON.stringify({ img: this.state.base64 }),
