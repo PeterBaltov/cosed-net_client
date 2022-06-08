@@ -16,6 +16,14 @@ but modifications such as changes to the colours have been made */
     color: var(--light-color) !important;
 }
 
+#root {
+    width: 100%;
+    height: 100%;
+    font-family: var(--quicksand), sans-serif, var(--roboto), var(--rockwell);
+    /* color: var(--dark-color); */
+    /* background-color: var(--light-color); */
+}
+
 :root{
   --light-color: #F6F9F9;
   --dark-color: #222222;
@@ -36,14 +44,6 @@ but modifications such as changes to the colours have been made */
   --quicksand: 'Quicksand';
   --roboto: 'Roboto';
   } 
-
-  #root {
-    width: 100%;
-    height: 100%;
-    font-family: var(--quicksand), sans-serif, var(--roboto), var(--rockwell);
-    /* color: var(--dark-color); */
-    /* background-color: var(--light-color); */
-}
 
   /* Getters for these variables */
   .quicksand-700 {
