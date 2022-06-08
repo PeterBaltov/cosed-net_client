@@ -1,0 +1,99 @@
+/* This CSS styling has been adopted from 
+my previous React JS User Interface implementation applied 
+in CS3528 Software Engineering and Professional Practice 
+but modifications such as changes to the colours have been made */
+
+/* css variables */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url(//db.onlinewebfonts.com/c/4aa3e37e571255737e5e6d4e9d9770a5?family=Rockwell);
+@font-face{
+    font-family: "Roboto";
+    src: '../fonts/Roboto/Roboto-Regular.ttf';
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    font-family: var(--quicksand), sans-serif, var(--roboto), var(--rockwell)
+    /* color: var(--dark-color); */
+    /* background-color: var(--light-color); */
+}
+
+.btn-outline-light {
+    background-color: Transparent !important;
+    color: var(--light-color) !important;
+}
+
+:root{
+  --light-color: #F6F9F9;
+  --dark-color: #222222;
+  --primary-color1: #070058;
+  --primary-color2: #681F67;
+  --primary-color3: #fe9800;
+  --primary-color4: #FFCD81;
+  --title-color: #141313;
+  --text-color: #777777;  
+  --border-color: #201f1f17;  
+  --gradient-color: linear-gradient(90deg, #681f67 0%, #000000 100%);
+  --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
+  --box-shadow: 0px 1px 5px rgba(57, 56, 61, 0.205);
+  
+  
+  /* font family variables. */ 
+  --rockwell: "Rockwell"
+  --quicksand: 'Quicksand';
+  --roboto: 'Roboto';
+  } 
+  
+  /* Getters for these variables */
+  .quicksand-700 {
+  font: normal 700 15px/0px var(--quicksand);
+  }
+  
+  .light-color-bg {
+  background-color: var(--light-color);
+  }
+  
+  .light-color-text {
+  color: var(--light-color);
+  }
+  
+  .dark-color-bg {
+  background-color: var(--dark-color);
+  }
+  
+  .dark-color-text {
+  color: var(--dark-color);
+  }
+  
+  .primary-color1-bg {
+  background-color: #070058;
+  }
+  
+  .primary-color1-text {
+  color: var(--primary-color1);
+  }
+  
+  .primary-color2-bg {
+  background-color: var(--primary-color2);
+  }
+  
+  .primary-color2-text {
+  color: var(--primary-color2);
+  }
+  
+  .primary-color3-bg {
+  background-color: var(--primary-color3);
+  }
+  
+  .primary-color3-text {
+  color: var(--primary-color3);
+  }
+  
+  .primary-color4-bg {
+  background-color: var(--primary-color4);
+  }
+  
+  .primary-color4-text {
+  color: var(--primary-color4);
+  }

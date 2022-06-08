@@ -1,0 +1,103 @@
+/* This CSS styling has been adopted from 
+my previous React JS User Interface implementation applied 
+in CS3528 Software Engineering and Professional Practice 
+but not all CSS styles have been used*/
+.logo-light {
+    /* background:url(../img/logo-light.png) no-repeat top left; */
+    width: 198px;
+    height: 35px;
+    background-size:contain;
+}
+
+.logo-dark {
+    /* background:url(../img/logo-dark.png) no-repeat top left; */
+    width: 198px;
+    height: 35px;
+    background-size:contain;
+}
+
+/* Start navigation */
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar{
+    padding: 0.5rem;
+    background-color: var(--light-color); 
+    transition: all 0.4s;
+    box-shadow: var(--box-shadow);
+} 
+
+.navbar.bg-transparent {
+    box-shadow: none;
+}
+
+nav .container {
+    padding: 0;
+}
+
+.navbar .nav-item .nav-link{
+    font: var(--Quicksand);
+    font-size: 18px;
+    font-weight: 700;
+    /* TODO apply margin right on desktop but not to the last element */
+    margin-right: 5px;
+}
+
+.navbar .navbar-nav .nav-item a{
+    border-radius: 0.5rem;
+    color: var(--primary-color1) !important;
+    padding: 0.35rem 1rem;
+}
+
+.navbar .navbar-nav .nav-item a.active{
+    background-color: var(--primary-color1) !important;
+    color: var(--light-color) !important;
+}
+
+.navbar .navbar-nav .nav-item a.bg-transparent{
+    color: var(--light-color) !important;
+}
+
+.navbar .navbar-nav .nav-item a.bg-transparent.active {     
+    background-color: transparent !important;  
+    border: 0.1rem solid var(--light-color); 
+    padding: 0.25rem 0.9rem;
+}
+
+.navbar .navbar-nav .nav-item a.bg-transparent:hover {    
+    background-color: var(--light-color) !important;  
+    color: var(--primary-color1) !important; 
+    border: 0.1rem solid var(--light-color); 
+    padding: 0.25rem 0.9rem;
+}
+
+.navbar .navbar-nav .nav-item a.bg-transparent:active {    
+    background-color: transparent !important;  
+    color: var(--light-color) !important; 
+}
+
+.navbar .navbar-nav a:hover, .navbar .navbar-nav a.active:hover{
+    background-color: var(--primary-color3) !important;
+    color: var(--light-color) !important;
+}
+
+.navbar .navbar-nav a:active{
+    background-color: var(--primary-color1) !important;
+    color: var(--light-color) !important;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* Change navbar styling on small viewports */
+@media (min-width: 40em) {
+
+.relative {
+    font-size: 10.375rem !important;
+}
+
+}
+/* End Navigation */

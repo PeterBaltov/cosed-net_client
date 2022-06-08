@@ -1,0 +1,375 @@
+/* This CSS styling has been adopted from 
+my previous React JS User Interface implementation applied 
+in CS3528 Software Engineering and Professional Practice 
+but modifications such as changes to the colours and dimensions have been made */
+
+/* Landing Page */
+.rainbow-text {
+  text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.2);
+  color: rgb(57, 57, 194);
+}
+
+.landing-caption {
+  text-align: center;
+  font-size: 15.5vmin;
+  line-height: 1;
+}
+
+.home-landing {
+  height: 100vh;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.landing-background{
+  background-color: rgb(206, 231, 253);
+}
+
+
+.vertical-center-50 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.thermal-file-upload {
+  border: 2px solid black;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border-radius: 0.5rem;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 4.5vmin;
+  transition: 0.2s ease-out 10ms;
+}
+
+
+.thermal-file-upload:hover {
+  background-color: transparent;
+  color: var(--light-color);
+}
+
+
+.thermal-file-upload:active {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+
+.pdf-file-download {
+  border: 0.1rem solid var(--light-color);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border-radius: 0.5rem;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 4vmin;
+  transition: 0.2s ease-out 10ms;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+
+.pdf-file-download:hover {
+  background-color: transparent;
+  color: var(--light-color);
+}
+
+.pdf-file-download:active {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.upload-card {
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+
+.upload-card h4{
+  font-size: 2rem;
+  margin: 0;
+}
+
+.upload-preview {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#userImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  width: 45%;
+  height: 45%;
+  border-radius: 0.5rem;
+}
+
+.loading-card {
+  /* TODO remove the border radius on mobile */
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.loading-card h4{
+  font-size: 2rem !important;
+  margin: 0;
+}
+
+.loading-image {
+  width: 200px;
+  height: 200px;
+}
+
+/* Results Page */
+.result-page {
+  margin-top: 60px;
+}
+
+.result-card {
+  /* TODO remove the border radius on mobile */
+  border-radius: 0.5rem;
+  height: auto;
+  padding: 1rem 2rem;
+  /* margin-bottom: 25px; */
+}
+
+.result-preview {
+  /* background-color: #f2f2f2;
+  border: 1px solid #dee2e6; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#result-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  height: 75%;
+  width: 75%;
+  border-radius: 0.5rem;
+}
+
+.result-overview-right {
+  padding: 0 0 0 15px;
+}
+
+.result-overview-right .alert {
+  margin: 0 0 0.25rem 0;
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+}
+
+.result-overview-right .alert hr {
+  margin: 0.5rem 0;
+}
+
+.result-overview-right a .alert-success:hover {
+  background-color: #c3e6cb;
+}
+
+.result-overview-right a .alert-success:active {
+  background-color: #d4edda;
+}
+
+.result-overview-right a .alert-danger:hover {
+  background-color: #f5c6cb;
+}
+
+.result-overview-right a .alert-danger:active {
+  background-color: #f8d7da;
+}
+
+.result-overview-right a .alert-danger { 
+  animation: blink 1s;
+  animation-iteration-count: 3;
+}
+
+@keyframes blink { 50% { background-color: #f5c6cb; }  }
+
+.result-overview-right .results-overview-head {
+  margin: 0;
+}
+
+
+.results-overview-head {
+  font-size: 1rem;
+}
+
+.histogram-image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.problem-details-card-left {
+  margin-left: -15px;
+  margin-right: 0;
+}
+
+.problem-details-card-right {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.print-header {
+  display: none;
+}
+
+.card li:before { content: '\2B50'; margin-left: -20px; margin-right: 10px; }
+
+
+@media (max-width: 575px)
+{
+  .upload-card {
+      height: 100vh;
+      margin: 0;
+      padding-top: 60px;
+      padding-bottom: 30px;
+      overflow-y: scroll;
+      border-radius: 0rem;
+  }
+
+  .result-card {
+      margin: 10px;
+  }
+
+  nav {
+      background-color: (--light-color-bg) !important;
+  }
+
+  .thermal-file-upload {
+      font-size: 6vmin;
+  }
+  
+  .thermal-file-icon {
+      /* background-image : url(../img/dark-color-icon.png); */
+      background-size: cover;
+      display: inline-block;
+      height: 6vmin;
+      width: 6vmin;
+      font-size: 6vmin;
+      vertical-align: middle;
+      margin-right: 1vmin;
+      margin-top: -1vmin;
+  }
+
+  .pdf-file-download {
+      font-size: 6vmin;
+  }
+
+  .pdf-file-icon {
+      /* background-image : url(../img/dark_pdf.png); */
+      background-size: cover;
+      display: inline-block;
+      height: 7vmin;
+      width: 5.7vmin;
+      font-size: 6vmin;
+      vertical-align: middle;
+      margin-right: 1vmin;
+      margin-top: -1vmin;
+  }
+}
+
+@media (max-width: 767px)
+{
+  .upload-settigs {
+      padding: 0;
+  }
+}
+
+@media (max-width: 991px)
+{
+  .result-overview-right {
+      padding: 0;
+      margin-top: 1rem;
+  }
+
+  .problem-details-card-left {
+      margin-left: -15px;
+      margin-right: -15px;
+  }
+}
+
+@media print {
+  .pdf-file-download {
+      display: none;
+  }
+
+  
+  .print-header {
+      display: flex;
+  }
+
+  .result-overview-right {
+      height: 100% !important;
+      overflow-y: visible !important;
+  }
+}
+
+.relative{
+  margin-top: 50px;
+  padding-top: 20px;
+}
+
+.image-text-center{
+  margin-bottom: -15px;
+}
+
+.line{
+  color: rgb(31, 68, 230);
+  background-color: rgb(31, 68, 230);
+  height: 0.2px;
+}
+
+
+.results-overview-text{
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+
+.classification{
+  color: rgb(31, 68, 230);
+}
+
