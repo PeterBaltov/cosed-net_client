@@ -8,7 +8,7 @@ import Loading from '../components/Loading'
 import Results from '../components/Results'
 
 import '../styles/App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 /*
