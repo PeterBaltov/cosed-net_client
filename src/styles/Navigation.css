@@ -2,6 +2,13 @@
 my previous React JS User Interface implementation applied 
 in CS3528 Software Engineering and Professional Practice 
 but not all CSS styles have been used*/
+
+.logo {
+    width: 198px;
+    height: 100%;
+    background-size:contain;
+}
+
 .logo-light {
     /* background:url(../img/logo-light.png) no-repeat top left; */
     width: 198px;

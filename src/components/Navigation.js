@@ -16,8 +16,8 @@ class Navigation extends React.Component {
         <Navbar fixed="top" expand="md" collapseOnSelect> 
         {/* expand="md"  */}
             <Container>
-                <Navbar.Brand className="p-0">
-                  {/* This Logo is not present yet but for future development a Logo will be added */}
+                <Navbar.Brand className="p-0" href='/'>
+                  <img src="/Logo-removebg-preview.png" className="logo" alt="logo"></img>
                 </Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse>

@@ -67,24 +67,23 @@ import { Button, Col, Row, Container, Jumbotron } from 'react-bootstrap';
       return(
           <>
                 <Jumbotron className="vertical-center bg-transparent p-0">
-                  <Container>   
-                    <Row>
-                        <Col xs={0} sm={0} md={0} lg={1} xl={1}></Col>
-                        <Col xs={12} sm={12} md={12} lg={10} xl={10} className="upload-card light-color-bg dark-color-text">
-                          <h3 className="text-center">Analyze Retinal Image</h3>
-                            <Row>
-                                  {this.state.preview ? <img id="userImg" src={this.state.preview} alt="preview img"/> : <h1>Please Upload Correct Format</h1>}
-                            </Row>
-                            <Row>
-                                <Col xs={6}>
-                                    <Button style={{width: "100%"}} href="/">Reset</Button>
-                                </Col>
-                                <Col xs={6}>
-                                    <Button style={{width: "100%"}} onClick={this.sendData}>Analyse</Button>
-                                </Col>
-                            </Row>
+                  <Container className="home-landing"> 
+                        <Col xs={12} sm={12} md={12} lg={10} xl={10} className="upload-card justify-content-center">
+                          <Row className="d-flex justify-content-center">
+                          <h3 className=" ">Analyze Retinal Image</h3>
+                          </Row>
+                          <Row className="d-flex justify-content-center">
+                                {this.state.preview ? <img id="userImg" src={this.state.preview} alt="preview img"/> : <h1>Please Upload Correct Format</h1>}
+                          </Row>
+                          <Row className="d-flex justify-content-center"> 
+                              <Col xs={6}>
+                                  <Button style={{width: "100%"}} href="/">Reset</Button>
+                              </Col>
+                              <Col xs={6}>
+                                  <Button style={{width: "100%"}} onClick={this.sendData}>Analyse</Button>
+                              </Col>
+                          </Row>
                         </Col>
-                    </Row>
                   </Container>
                 </Jumbotron>
           </>

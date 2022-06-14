@@ -97,17 +97,22 @@ input[type="file"] {
 
 .upload-card {
   height: auto;
-  margin-top: 60px;
+  margin-top: 120px;
   margin-bottom: 30px;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
+  background: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 
-.upload-card h4{
+/* .upload-card h4{
   font-size: 2rem;
   margin: 0;
-}
+} */
 
 .upload-preview {
   height: 100%;
@@ -120,7 +125,7 @@ input[type="file"] {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 45%;
   height: 45%;
   border-radius: 0.5rem;
@@ -263,80 +268,42 @@ input[type="file"] {
 @media (max-width: 575px)
 {
   .upload-card {
-      height: 100vh;
-      margin: 0;
-      padding-top: 60px;
-      padding-bottom: 30px;
-      overflow-y: scroll;
-      border-radius: 0rem;
+    height: auto;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    background: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  #userImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    width: 70%;
+    height: 70%;
+    border-radius: 0.5rem;
   }
 
   .result-card {
       margin: 10px;
   }
 
-  nav {
-      background-color: (--light-color-bg) !important;
-  }
 
-  .thermal-file-upload {
-      font-size: 6vmin;
-  }
-  
-  .thermal-file-icon {
-      /* background-image : url(../img/dark-color-icon.png); */
-      background-size: cover;
-      display: inline-block;
-      height: 6vmin;
-      width: 6vmin;
-      font-size: 6vmin;
-      vertical-align: middle;
-      margin-right: 1vmin;
-      margin-top: -1vmin;
-  }
-
-  .pdf-file-download {
-      font-size: 6vmin;
-  }
-
-  .pdf-file-icon {
-      /* background-image : url(../img/dark_pdf.png); */
-      background-size: cover;
-      display: inline-block;
-      height: 7vmin;
-      width: 5.7vmin;
-      font-size: 6vmin;
-      vertical-align: middle;
-      margin-right: 1vmin;
-      margin-top: -1vmin;
-  }
 }
 
-@media (max-width: 767px)
-{
-  .upload-settigs {
-      padding: 0;
-  }
-}
 
-@media (max-width: 991px)
-{
-  .result-overview-right {
-      padding: 0;
-      margin-top: 1rem;
-  }
-
-  .problem-details-card-left {
-      margin-left: -15px;
-      margin-right: -15px;
-  }
-}
 
 @media print {
   .pdf-file-download {
       display: none;
   }
-
   
   .print-header {
       display: flex;
@@ -362,7 +329,6 @@ input[type="file"] {
   background-color: rgb(31, 68, 230);
   height: 0.2px;
 }
-
 
 .results-overview-text{
   text-decoration: underline;
