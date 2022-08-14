@@ -97,7 +97,7 @@ class Results extends React.Component {
                                     <h3 className="text-center classification-head pb-1"><b>Classification</b></h3>
                                     <h3 className="text-center pb-1">The Retinal Image has been Classified to have 
                                     <br/>
-                                     Diabetic Retinopathy Level
+                                     Melanoma Level/*Diabetic Retinopathy Level*/
                                      <br/> 
                                      <b className="classification">Level {this.state.result.classification}</b></h3>
                                     <hr className="line" />
